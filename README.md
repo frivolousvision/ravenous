@@ -8,4 +8,4 @@ into a search input in order to exectute a request to Yelp's APIs. The results a
 rendered to the UI.
 
 
-[A live version of this app can been seen here] (http://ravenous-dan-project.surge.sh/)
+[A live version of this app can been seen here](http://ravenous-dan-project.surge.sh/)
