@@ -1,0 +1,176 @@
+* { 
+    margin: 0;
+    padding: 0;    
+    
+}
+html {
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body {
+    background-color: black;
+    color: seashell;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+.grid {
+    display: grid;
+    width: 60rem;
+    height: 140rem;
+    grid-template: repeat(30, 1fr) / repeat(12, 1fr);
+    margin: auto;
+}
+
+@media only screen and (max 480px) {
+    .grid {
+        grid-template-columns: 100%;
+    }
+}
+.nav-items {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 2.5 rem;
+    z-index: 5;
+    background-color: black;
+    border-bottom: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-items li {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-decoration: none;
+    padding: .5rem 0;
+    
+}
+
+.nav a {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-decoration: none;
+    
+}
+
+a:link {
+    text-decoration: none;
+    color:seashell;
+}
+a:visited {
+    text-decoration: none;
+    color:seashell;
+}
+a:hover {
+    color:red;
+}
+img {
+    max-width: 100%;
+}
+.banner {
+    grid-area: 2 / 1 / 10 / -1;
+    display: flex;
+    /*padding-top: 2.5rem;*/
+}
+.title {
+    background-color: black;
+    grid-area: 5 / 1 / 6 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-family: "lexend mega";
+    font-size: 3rem;
+    letter-spacing: .6rem;
+    text-transform: uppercase;
+}
+h2 {
+    font-family: "lexend mega";
+    font-size: 2.5rem;
+    letter-spacing: .6rem;
+    text-transform: uppercase;
+}
+.mission {
+    grid-area: 11 / 3 / auto / 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    
+}
+.mission p {
+    margin-top: 1rem;
+    line-height: 1.5rem;
+}
+
+.products {
+    grid-area: 14 / 1 / 16 / 15;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+    width: 60rem;
+}
+
+.gallery-1 {
+    display: flex;
+    flex-shrink: 1;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.gallery-1 img {
+    max-width: 15rem;
+}
+
+.gallery-2 {
+    display: flex;
+    flex-shrink: 1;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.gallery-2 img {
+    max-width: 15rem;
+}
+.team-box {
+    
+    
+    justify-content: center;
+    
+}
+.team {
+    display: grid;
+    
+    grid-area: 24 / 1 / 30 / -1;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+.team img {
+    max-width: 20rem;
+    
+
+}
+
+.team h2 {
+    
+
+}
+.team figcaption {
+    
+
+}
