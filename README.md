@@ -12,3 +12,5 @@ pass props to other components to update the search terms for the Yelp API endpo
 
 
 [A live version of this app can been seen here](http://ravenous-dan-project.surge.sh/)
+
+For the fetch to work properly, a temporary server must be first activated: [here](https://cors-anywhere.herokuapp.com/corsdemo)
