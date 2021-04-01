@@ -1,0 +1,28 @@
+input {
+    margin: 1rem;
+}
+.searchResults {
+    margin-top: 4rem;
+}
+.loading {
+    margin-top: 10rem;
+    max-height: 100px;
+}
+.empty-image {
+    border-radius: 25px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .loading {
+      animation: loading-spin infinite 1s linear;
+    }
+  }
+
+  @keyframes loading-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
